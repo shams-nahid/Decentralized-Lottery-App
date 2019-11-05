@@ -109,10 +109,16 @@ class App extends React.Component {
                                                     >EtherScan</a>
               </div>
               <div>
-                Source Code: <a target='_blank' className="remote-link" href="">Github</a>
+                Source Code: <a 
+                                target='_blank' 
+                                className="remote-link" 
+                                href="https://github.com/bmshamsnahid/Decentralized-Lottery-App">Github</a>
               </div>
               <div>
-                Inspired from <a target='_blank' className="remote-link" href="https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide">Stephen Grider Course</a>
+                Inspired from <a 
+                                target='_blank' 
+                                className="remote-link" 
+                                href="https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide">Stephen Grider Course</a>
               </div>
               <div>
                 Powered By <a target='_blank' className="remote-link" href="https://www.ethereum.org/">Ethereum Network</a>
