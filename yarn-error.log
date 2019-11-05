@@ -1,0 +1,51 @@
+Arguments: 
+  /home/nahid/.nvm/versions/node/v11.6.0/bin/node /home/nahid/.nvm/versions/node/v11.6.0/bin/yarn add geoip-lite
+
+PATH: 
+  /home/nahid/anaconda3/bin:/home/nahid/bin:/home/nahid/.local/bin:/home/nahid/anaconda3/bin:/home/nahid/.nvm/versions/node/v11.6.0/bin:/home/nahid/bin:/home/nahid/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  11.6.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: read ECONNRESET
+      at TLSWrap.onStreamRead (internal/stream_base_commons.js:162:27)
+
+npm manifest: 
+  {
+    "name": "inbox",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "mocha",
+      "start": "node server.js",
+      "dev": "nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1",
+      "ganache-cli": "^6.0.3",
+      "mocha": "^4.0.1",
+      "solc": "^0.4.19",
+      "truffle-hdwallet-provider": "0.0.3",
+      "web3": "^1.0.0-beta.26",
+      "websocket": "^1.0.30"
+    },
+    "devDependencies": {
+      "nodemon": "^1.19.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
