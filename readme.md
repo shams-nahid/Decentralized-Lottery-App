@@ -1,6 +1,6 @@
 # The Honest Lottery App
 
-[The Honest Lottery App](https://decentralized-lottery-app.herokuapp.com/) has a prize pool and a list of people who have entered the prize pool. People send some amount of money(ether) in the contract. As soon as people send some amount of money, they are being recorded as a player. Ethers, that the players send, directly goes to the contract account. After a certain times, contract manager make the contract to pick a winner. Then the contract pick a winner randomly and transfer all money from the prize pool to the winner. At that point, the lottery contract resets and becomes ready to accept a new list of players.
+[The Honest Lottery App](https://decentralized-lottery-app.herokuapp.com/) has a prize pool and a list of people who have entered the prize pool. People send some amount of money(ether) in the contract. As soon as people money, they are being recorded as a player. Ethers, that the players send, directly goes to the contract account. After a certain times, contract manager make the contract to pick a winner. The contract pick winner randomly and transfer all money from the prize pool to the winner. At that point, the lottery contract resets and becomes ready to accept a new list of players.
 
 ### [Live](https://decentralized-lottery-app.herokuapp.com/)
 
