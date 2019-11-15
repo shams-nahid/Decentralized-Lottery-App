@@ -159,6 +159,7 @@ You are all set to go.
 
 ## Upcoming Features
 
+- Run application without web3
 - Error handling
 - Alert on transaction failed or completion
 - Restricted multiple entry
