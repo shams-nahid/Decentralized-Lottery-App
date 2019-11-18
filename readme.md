@@ -1,25 +1,16 @@
-# The Honest Lottery App
+# Deploy your first smart contract in `Ethereum` network
 
-[The Honest Lottery App](https://decentralized-lottery-app.herokuapp.com/) has a prize pool and a list of people who have entered the prize pool. People send some amount of money(ether) in the contract. As soon as people money, they are being recorded as a player. Ethers, that the players send, directly goes to the contract account. After a certain times, contract manager make the contract to pick a winner. The contract pick winner randomly and transfer all money from the prize pool to the winner. At that point, the lottery contract resets and becomes ready to accept a new list of players.
+`Bitcoin` raised the blockchain technology, where `Ethereum` took it to the next level. Often said, `Blockchin 2.0`, `Ethereum` proved the possibility of blockchain technology beyond financial sector. This public blockchain network is famous for allowing the implementation of smart contracts. `Smart Contract` acts as a `locker` where it can be unlocked by certain conditions. `Solidity` programming language can be used to develop these `Smart Contract`.
 
-### [Live](https://decentralized-lottery-app.herokuapp.com/)
-
-## Features
-
-- `Players` can put money
-- `Smart Contract` will randomly select the winner and send money
-- Powered by public blockchain platform
-- End to end test
-- Interactive UI
-- Transparent selection system
+By the end of this blog,
+  * You will have a deployed smart contract in `Ethereum` network (Rinkeby Testnet)
+  * You will interact with your smart contract using a react app.
 
 ## Tech Stack
 
 - [Ethereum](https://www.ethereum.org/) - Platform
 - [Solidity](https://solidity.readthedocs.io/en/v0.4.17/) - Language
-- [Node.js](https://nodejs.org/en/) - Javascript Runtime
 - [React](https://reactjs.org/) - UI Library
-- [Heroku](https://heroku.com/) - App Hosting
 
 ## Prerequisite Technologies In Your Machine
 
@@ -27,18 +18,18 @@
 - [React](https://reactjs.org/)
 - [MetaMask](https://metamask.io/)
 
-## Installation
+### Metamask Plugin Installation
 
-#### Metamask Plugin Installation
+Metamask is a pretty neat browser plugin. It allows an end user to interact with a dAPP on `ethethreum` network. With `metamask`, end user do not have to run a `ethereum node`. `Ethereum` also handle users `Ethereum Wallet`.
 
-- Install [Chrome Browser](https://www.google.com/chrome/) in your machine
-
+* Install [Chrome Browser](https://www.google.com/chrome/) in your machine
 * Go to [Chrome Web Store](https://chrome.google.com/webstore/category/extension) and search for `Metamask`
 * Open `Metamask` offered by `https://metamask.io/`
 * Click `Add to Chrome` and confirm by `Add Extension`
 * Now `Metamask` should be available in your `Chrome Extension` list
 
-#### Create Wallet
+### Create Wallet
+Using wallet, end users are allowed to send and receive ethers from dApps.
 
 - Open `Metamask` and click `Get Started`
 - If you already have a wallet then go to `Import Wallet`
@@ -48,7 +39,9 @@
 - Now go to `Next Section`, select the words according to the phrase
 - Now your wallet is `All Set Up`, You should get your `Account Address`
 
-#### Connect to `Rinkeby` network and get fake `Ether`
+### Connect to `Rinkeby` network and get fake `Ether`
+
+Tesnet like `Rinkeby`, does not deal with actual money. To deploy and make transaction in `ethereum testnet` we will require the fake ether.
 
 - Open the `Metamask` plugin
 - On `top-right` switch to `Rinkeby Network` from `Main Network`
@@ -62,10 +55,11 @@
 - Now in your `Metamask`, `fake ether` should appear
 - Sometimes it takes a little more time to `transaction`, so wait and also make sure you `Metamask` is connected to the `Rinkeby` network.
 
-#### Run locally and Simulate `Contract` through `Remix` Ide
+### Run locally and Simulate `Contract` through `Remix` Ide
 
-- Open [Remix](https://remix.ethereum.org/) IDE.
+`Remix` is a online ide to create solidity smart contract. It also has feature to `compile`, `run`, `deploy` and `simulate` smart contracts.
 
+* Open [Remix](https://remix.ethereum.org/) IDE.
 * Select environment `Solidity`
 * Go to `File Explorer` Tab and create a file `Lottery.sol`
 * Get the [Contract Code](https://gist.github.com/bmshamsnahid/05005b4c1e9c402e521be8b56d8050f2)
@@ -78,7 +72,9 @@
 * Go to `Deploy And Run Transaction` Tab and `Deploy` the contract in local `EVM`
 * Your contract functionality will be available in `Deploy And Run Tracsaction` tab, under the `Deployed Contract` section
 
-#### Deploy the contract to `Rinkeby Network` through `Remix` Ide
+### Deploy the contract to `Rinkeby Network` through `Remix` Ide
+
+`Testnets` provide developers a place to kick the `smart contract` and `test` before the real assets being involved. These `Testnets` behave very much like the `main-net` and does not require actual money(`ether`). Here we are going to try `Rinkeby Testnet`.
 
 - Make sure you run the `Lottery` contract using previous section instructions
 - - Open `Metamask`, put the `password` and make sure, you are connected to the `Rinkeby` network.
@@ -90,7 +86,9 @@
 - In the `Remix IDE`, check `Log Section` and grab the `Transaction Hash` and store it.
 - Go to [Ether Scan](https://rinkeby.etherscan.io/) and search for the `Transaction Hash`. You will get the `Deployed Contract Address`. Also this `Contract Address` will be required further.
 
-#### Verify and Publish Your Contract:
+### Verify and Publish Your Contract(Optional)
+
+Everything on `Ethereum Network` is public, including smart contract `byte-code`. `Byte-code` is low level stuff and very difficult to understand. Other wise if you `verify and publish` your `smart-contract`, then `solidity source code` will be available. If you want more people to interact with your `smart contract`, you should `verify and publish` your `smart-contract`.
 
 - From [Ether Scan](https://rinkeby.etherscan.io/), search the `Transaction Hash` or `Contract Address` and go to `Contract Details` page
 - From `Contract Details`, go to `Contract` tab
@@ -102,30 +100,36 @@
 - Click `Verify and Publish` and you should get the `Contract Byte Code` and `Contract ABI`
 - Store the `Contract Byte Code` and `Contract ABI` for future use
 
-#### Clone Repo
+### Clone Repo
+
+This is a `react` app to interact with our `lottery` contract.
 
 ```
 git clone https://github.com/bmshamsnahid/Decentralized-Lottery-App
 ```
 
-#### Enable Environment
+### Enable Environment
+
+To run the react app, please ensure the following `environment`.
 
 ```
 > Make sure `node.js` is installed. To check version, use `node -v`. This is tested in node 8, 10, 11 and 12
 ```
 
 ```
-> In `\config` directory, create file `dev.js` and put local db url with username and password. An example is provide in the same directory named `example-dev.js`
+>(Optional, only for node.js deployment)  In `\config` directory, create file `dev.js` and put local db url with username and password. An example is provide in the same directory named `example-dev.js`
 ```
 
 ```
 > To use your own contract, update the `/ui/src/contractConfig.js` as your `Contract Address` and `Contract ABI`
 ```
 
-#### Run Application
+### Run Application
+
+To run your app locally, you do not need a `server`. But for deployment, the `static react app` should be hosted in `node app`.
 
 ```
-> Install server side dependency by `npm i` in the project-root directory. In case you face any problem, use `yarn` package manager.
+> (Optional, only for node.js deployment) Install server side dependency by `npm i` in the project-root directory. In case you face any problem, use `yarn` package manager.
 > Go to `\ui` and install dependencies `npm i`
 > Run the front end `npm start`
 > Your app is available in `http://localhost:3000`
@@ -133,29 +137,18 @@ git clone https://github.com/bmshamsnahid/Decentralized-Lottery-App
 > Make sure you are connected to `Rinkeby` network and have enough ether
 ```
 
-#### Test Application
-
-```
-> In project-root directory, run `npm run test`
-```
-
-#### Deployment
-
-```
-> Put `smart contract` to the `remix` IDE
-> Go to `Deploy and run Transaction tab`
-> Select environment `Injected Web3`
-> Put your `account address` that has enough ether in `Rinkeby` test net
-> Make the `smart contract` deployment and get the transaction hash
-> From `Rinkeby` network `EtherScan`, using the transaction hash, get the `contract address` and `contract abi`
-> (Optional) Verify your contract by publishing it (More Trusted)
-> Put the `contract address` and `contract abi` in `\ui\src\contractCongfig.js`
-> Build the react side `npm run build` and put the react `ui\build` directory to `\public`
-> Now run your node app `npn run dev` and your app will be available at `http://localhost:3000`
-> Deploy your node app and put environment variable according to `\config\prod.js`
-```
-
 You are all set to go.
+
+### Test Application
+
+It is important to test your `smart-contract` before deployment.
+
+```
+> To install dependency, Go to root directory and run `npm i`
+> Invoke unit-test by `npm run test`
+```
+
+A deployed version of can be found [here](https://decentralized-lottery-app.herokuapp.com/).
 
 ## Upcoming Features
 
@@ -178,3 +171,10 @@ From account: 0x612a306d2707cf0B49A5d76594482f7AfCda506c
 Contract address: 0x8C9815E2372bC6F9Dec915751B31666aB08b2edb
 
 Contract link: https://rinkeby.etherscan.io/address/0x8c9815e2372bc6f9dec915751b31666ab08b2edb
+
+
+References:
+
+* [Metamask Installation](https://youtu.be/ZIGUC9JAAw8)
+* [Ethereum Contract](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/)
+* [Verification & publish](https://programtheblockchain.com/posts/2018/01/16/verifying-contract-source-code/)
