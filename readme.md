@@ -20,7 +20,7 @@ By the end of this blog,
 
 ### Metamask Plugin Installation
 
-Metamask is a pretty neat browser plugin. It allows an end user to interact with a dAPP on `ethethreum` network. With `metamask`, end user do not have to run a `ethereum node`. `Ethereum` also handle users `Ethereum Wallet`.
+Metamask is a pretty neat browser plugin. It allows an end user to interact with a dAPP on `ethethreum` network. With `metamask`, end user do not have to run a `ethereum node`. `Metamask` also handle users `Ethereum Wallet`.
 
 * Install [Chrome Browser](https://www.google.com/chrome/) in your machine
 * Go to [Chrome Web Store](https://chrome.google.com/webstore/category/extension) and search for `Metamask`
@@ -55,7 +55,7 @@ Tesnet like `Rinkeby`, does not deal with actual money. To deploy and make trans
 - Now in your `Metamask`, `fake ether` should appear
 - Sometimes it takes a little more time to `transaction`, so wait and also make sure you `Metamask` is connected to the `Rinkeby` network.
 
-### Run locally and Simulate `Contract` through `Remix` Ide
+### Run and Simulate `Contract` through `Remix` Ide
 
 `Remix` is a online ide to create solidity smart contract. It also has feature to `compile`, `run`, `deploy` and `simulate` smart contracts.
 
@@ -77,7 +77,7 @@ Tesnet like `Rinkeby`, does not deal with actual money. To deploy and make trans
 `Testnets` provide developers a place to kick the `smart contract` and `test` before the real assets being involved. These `Testnets` behave very much like the `main-net` and does not require actual money(`ether`). Here we are going to try `Rinkeby Testnet`.
 
 - Make sure you run the `Lottery` contract using previous section instructions
-- - Open `Metamask`, put the `password` and make sure, you are connected to the `Rinkeby` network.
+- Open `Metamask`, put the `password` and make sure, you are connected to the `Rinkeby` network.
 - Go to `Deployed And Run Transaction` tab and select
   - `Environment` is `Injected Web3`
   - As account, your `Metamask` wallet address should be selected
@@ -88,7 +88,7 @@ Tesnet like `Rinkeby`, does not deal with actual money. To deploy and make trans
 
 ### Verify and Publish Your Contract(Optional)
 
-Everything on `Ethereum Network` is public, including smart contract `byte-code`. `Byte-code` is low level stuff and very difficult to understand. Other wise if you `verify and publish` your `smart-contract`, then `solidity source code` will be available. If you want more people to interact with your `smart contract`, you should `verify and publish` your `smart-contract`.
+Everything on `Ethereum Network` is public, including smart contract `byte-code`. `Byte-code` is low level stuff and very difficult to understand. You can publish your `solidity source code` by `verify and publish` in `ether-scan`. If you want more people to interact with your `smart contract`, you should `verify and publish` your `smart-contract`.
 
 - From [Ether Scan](https://rinkeby.etherscan.io/), search the `Transaction Hash` or `Contract Address` and go to `Contract Details` page
 - From `Contract Details`, go to `Contract` tab
@@ -158,23 +158,19 @@ A deployed version of can be found [here](https://decentralized-lottery-app.hero
 - Restricted multiple entry
 - `Pick Winner` button only for the `manager`
 
-From `deploy and run tracsaction tab`,
-select environment as `injected web3`
-add your rinky by account
+## References:
 
-TxAddress: https://rinkeby.etherscan.io/tx/0x3349da25727612e32d292b2fd1f1d2ac5d07b35b9b0f62f356f60d3aa65c6241
-
-TxHash: 0x3349da25727612e32d292b2fd1f1d2ac5d07b35b9b0f62f356f60d3aa65c6241
-
-From account: 0x612a306d2707cf0B49A5d76594482f7AfCda506c
-
-Contract address: 0x8C9815E2372bC6F9Dec915751B31666aB08b2edb
-
-Contract link: https://rinkeby.etherscan.io/address/0x8c9815e2372bc6f9dec915751b31666ab08b2edb
-
-
-References:
-
+* [Contract Source Code](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/)
 * [Metamask Installation](https://youtu.be/ZIGUC9JAAw8)
 * [Ethereum Contract](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/)
 * [Verification & publish](https://programtheblockchain.com/posts/2018/01/16/verifying-contract-source-code/)
+
+* [TxAddress](https://rinkeby.etherscan.io/tx/0x3349da25727612e32d292b2fd1f1d2ac5d07b35b9b0f62f356f60d3aa65c6241)
+
+* [Smart Contract Link](https://rinkeby.etherscan.io/address/0x8c9815e2372bc6f9dec915751b31666ab08b2edb)
+
+* TxHash: `0x3349da25727612e32d292b2fd1f1d2ac5d07b35b9b0f62f356f60d3aa65c6241`
+
+* From account: `0x612a306d2707cf0B49A5d76594482f7AfCda506c`
+
+* Contract address: `0x8C9815E2372bC6F9Dec915751B31666aB08b2edb`
