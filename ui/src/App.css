@@ -97,3 +97,36 @@
   padding-right: 5px;
   padding-left: 15px;
 }
+
+.metamask-not-found {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  background: #0d00ad;
+  border-radius: 22px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  margin: 8px 5px 7px 5px;
+  padding: 2px 0px 3px 0px;
+}
+.warning {
+  background: red !important;
+}
+
+.metamask-not-found a {
+  font-family: inherit !important;
+  font-size: 15px;
+  color: white;
+  text-decoration: none !important;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+
+.error-message {
+  border-radius: 0px !important;
+  color: red !important;
+  background: white !important;
+}
