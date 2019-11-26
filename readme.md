@@ -64,6 +64,7 @@ git clone https://github.com/bmshamsnahid/Decentralized-Lottery-App
 ```
 > Go to `\ui` and install dependencies `npm i`
 > Run the front end `npm start`
+> Update `api url` to local node app `http://localhost:8080` in `App.js` file.
 > Your app is available in `http://localhost:3000`
 ```
 
@@ -85,12 +86,19 @@ You are all set to go.
 
 ### [Application Details](https://ixorasolution.com/blog)
 
-TxAddress: https://rinkeby.etherscan.io/tx/0x3349da25727612e32d292b2fd1f1d2ac5d07b35b9b0f62f356f60d3aa65c6241
+## References:
 
-TxHash: 0x3349da25727612e32d292b2fd1f1d2ac5d07b35b9b0f62f356f60d3aa65c6241
+- [Contract Source Code](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/)
+- [Metamask Installation](https://youtu.be/ZIGUC9JAAw8)
+- [Ethereum Contract](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/)
+- [Verification & publish](https://programtheblockchain.com/posts/2018/01/16/verifying-contract-source-code/)
 
-From account: 0x612a306d2707cf0B49A5d76594482f7AfCda506c
+- [TxAddress](https://rinkeby.etherscan.io/tx/0x3349da25727612e32d292b2fd1f1d2ac5d07b35b9b0f62f356f60d3aa65c6241)
 
-Contract address: 0x8C9815E2372bC6F9Dec915751B31666aB08b2edb
+- [Smart Contract Link](https://rinkeby.etherscan.io/address/0x8c9815e2372bc6f9dec915751b31666ab08b2edb)
 
-Contract link: https://rinkeby.etherscan.io/address/0x8c9815e2372bc6f9dec915751b31666ab08b2edb
+- TxHash: `0x3349da25727612e32d292b2fd1f1d2ac5d07b35b9b0f62f356f60d3aa65c6241`
+
+- From account: `0x612a306d2707cf0B49A5d76594482f7AfCda506c`
+
+- Contract address: `0x8C9815E2372bC6F9Dec915751B31666aB08b2edb`
