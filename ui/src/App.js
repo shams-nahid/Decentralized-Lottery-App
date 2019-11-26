@@ -150,7 +150,7 @@ class App extends React.Component {
           </div>
 
           <div className='flex-col size2'>
-            <span className='txt1 p-b-20'>The Honest Lottery App</span>
+            <span className='txt1 p-b-20'>Decentralized Lottery App</span>
 
             <span className='txt2'>
               This lottery contract has a prize pool and a list of people who
