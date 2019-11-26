@@ -3,8 +3,9 @@
 `Bitcoin` raised the blockchain technology, where `Ethereum` took it to the next level. Often said, `Blockchin 2.0`, `Ethereum` proved the possibility of blockchain technology beyond financial sector. This public blockchain network is famous for allowing the implementation of smart contracts. `Smart Contract` acts as a `locker` where it can be unlocked by certain conditions. `Solidity` programming language can be used to develop these `Smart Contract`.
 
 By the end of this blog,
-  * You will have a deployed smart contract in `Ethereum` network (Rinkeby Testnet)
-  * You will interact with your smart contract using a react app.
+
+- You will have a deployed smart contract in `Ethereum` network (Rinkeby Testnet)
+- You will interact with your smart contract using a react and node app.
 
 ## Tech Stack
 
@@ -22,13 +23,14 @@ By the end of this blog,
 
 Metamask is a pretty neat browser plugin. It allows an end user to interact with a dAPP on `ethethreum` network. With `metamask`, end user do not have to run a `ethereum node`. `Metamask` also handle users `Ethereum Wallet`.
 
-* Install [Chrome Browser](https://www.google.com/chrome/) in your machine
-* Go to [Chrome Web Store](https://chrome.google.com/webstore/category/extension) and search for `Metamask`
-* Open `Metamask` offered by `https://metamask.io/`
-* Click `Add to Chrome` and confirm by `Add Extension`
-* Now `Metamask` should be available in your `Chrome Extension` list
+- Install [Chrome Browser](https://www.google.com/chrome/) in your machine
+- Go to [Chrome Web Store](https://chrome.google.com/webstore/category/extension) and search for `Metamask`
+- Open `Metamask` offered by `https://metamask.io/`
+- Click `Add to Chrome` and confirm by `Add Extension`
+- Now `Metamask` should be available in your `Chrome Extension` list
 
 ### Create Wallet
+
 Using wallet, end users are allowed to send and receive ethers from dApps.
 
 - Open `Metamask` and click `Get Started`
@@ -59,18 +61,18 @@ Tesnet like `Rinkeby`, does not deal with actual money. To deploy and make trans
 
 `Remix` is a online ide to create solidity smart contract. It also has feature to `compile`, `run`, `deploy` and `simulate` smart contracts.
 
-* Open [Remix](https://remix.ethereum.org/) IDE.
-* Select environment `Solidity`
-* Go to `File Explorer` Tab and create a file `Lottery.sol`
-* Get the [Contract Code](https://gist.github.com/bmshamsnahid/05005b4c1e9c402e521be8b56d8050f2)
-* Go to `Solidity Compiler` Tab and Select
+- Open [Remix](https://remix.ethereum.org/) IDE.
+- Select environment `Solidity`
+- Go to `File Explorer` Tab and create a file `Lottery.sol`
+- Get the [Contract Code](https://gist.github.com/bmshamsnahid/05005b4c1e9c402e521be8b56d8050f2)
+- Go to `Solidity Compiler` Tab and Select
   - `Compiler Version` to `0.4.17`
   - `Language` as `Solidity`
   - `EVM` as `Compiler Default`
-* Now click `Compile Lottery.sol`
-* You can enable `auto-compile` by `check` the checkbox `Auto Compile`
-* Go to `Deploy And Run Transaction` Tab and `Deploy` the contract in local `EVM`
-* Your contract functionality will be available in `Deploy And Run Tracsaction` tab, under the `Deployed Contract` section
+- Now click `Compile Lottery.sol`
+- You can enable `auto-compile` by `check` the checkbox `Auto Compile`
+- Go to `Deploy And Run Transaction` Tab and `Deploy` the contract in local `EVM`
+- Your contract functionality will be available in `Deploy And Run Tracsaction` tab, under the `Deployed Contract` section
 
 ### Deploy the contract to `Rinkeby Network` through `Remix` Ide
 
@@ -113,7 +115,7 @@ git clone https://github.com/bmshamsnahid/Decentralized-Lottery-App
 To run the react app, please ensure the following `environment`.
 
 ```
-> Make sure `node.js` is installed. To check version, use `node -v`. This is tested in node 8, 10, 11 and 12
+> Make sure `node.js` is installed. To check version, use `node -v`. This is tested in node 10.17.0
 ```
 
 ```
@@ -128,9 +130,19 @@ To run the react app, please ensure the following `environment`.
 
 To run your app locally, you do not need a `server`. But for deployment, the `static react app` should be hosted in `node app`.
 
+#### Server
+
 ```
-> (Optional, only for node.js deployment) Install server side dependency by `npm i` in the project-root directory. In case you face any problem, use `yarn` package manager.
+> Install server side dependency by `npm i` in the project-root directory. In case you face any problem, use `yarn` package manager.
+> Run server by `npm run dev`
+> Server is running in `http://localhost:8080`
+```
+
+#### Client
+
+```
 > Go to `\ui` and install dependencies `npm i`
+> Update `api url` to local node app `http://localhost:8080` in `App.js` file.
 > Run the front end `npm start`
 > Your app is available in `http://localhost:3000`
 > Make sure `metamask` is installed
@@ -150,27 +162,19 @@ It is important to test your `smart-contract` before deployment.
 
 A deployed version of can be found [here](https://decentralized-lottery-app.herokuapp.com/).
 
-## Upcoming Features
-
-- Run application without web3
-- Error handling
-- Alert on transaction failed or completion
-- Restricted multiple entry
-- `Pick Winner` button only for the `manager`
-
 ## References:
 
-* [Contract Source Code](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/)
-* [Metamask Installation](https://youtu.be/ZIGUC9JAAw8)
-* [Ethereum Contract](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/)
-* [Verification & publish](https://programtheblockchain.com/posts/2018/01/16/verifying-contract-source-code/)
+- [Contract Source Code](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/)
+- [Metamask Installation](https://youtu.be/ZIGUC9JAAw8)
+- [Ethereum Contract](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/)
+- [Verification & publish](https://programtheblockchain.com/posts/2018/01/16/verifying-contract-source-code/)
 
-* [TxAddress](https://rinkeby.etherscan.io/tx/0x3349da25727612e32d292b2fd1f1d2ac5d07b35b9b0f62f356f60d3aa65c6241)
+- [TxAddress](https://rinkeby.etherscan.io/tx/0x3349da25727612e32d292b2fd1f1d2ac5d07b35b9b0f62f356f60d3aa65c6241)
 
-* [Smart Contract Link](https://rinkeby.etherscan.io/address/0x8c9815e2372bc6f9dec915751b31666ab08b2edb)
+- [Smart Contract Link](https://rinkeby.etherscan.io/address/0x8c9815e2372bc6f9dec915751b31666ab08b2edb)
 
-* TxHash: `0x3349da25727612e32d292b2fd1f1d2ac5d07b35b9b0f62f356f60d3aa65c6241`
+- TxHash: `0x3349da25727612e32d292b2fd1f1d2ac5d07b35b9b0f62f356f60d3aa65c6241`
 
-* From account: `0x612a306d2707cf0B49A5d76594482f7AfCda506c`
+- From account: `0x612a306d2707cf0B49A5d76594482f7AfCda506c`
 
-* Contract address: `0x8C9815E2372bC6F9Dec915751B31666aB08b2edb`
+- Contract address: `0x8C9815E2372bC6F9Dec915751B31666aB08b2edb`
