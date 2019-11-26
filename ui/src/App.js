@@ -26,7 +26,7 @@ class App extends React.Component {
   }
 
   async updateContractInfo() {
-    fetch('http://localhost:8080/api/contract-info')
+    fetch('/api/contract-info')
       .then(res => res.json())
       .then(({ manager, players, balanceWei: balance, balanceEther }) => {
         this.setState({ manager, players, balance, balanceEther });
@@ -171,6 +171,7 @@ class App extends React.Component {
                 Monitor Contract Transaction in{' '}
                 <a
                   target='_blank'
+                  rel='noopener noreferrer'
                   className='remote-link'
                   href='https://rinkeby.etherscan.io/tx/0x3349da25727612e32d292b2fd1f1d2ac5d07b35b9b0f62f356f60d3aa65c6241'
                 >
@@ -181,6 +182,7 @@ class App extends React.Component {
                 Source Code:{' '}
                 <a
                   target='_blank'
+                  rel='noopener noreferrer'
                   className='remote-link'
                   href='https://github.com/bmshamsnahid/Decentralized-Lottery-App'
                 >
@@ -191,6 +193,7 @@ class App extends React.Component {
                 Inspired from{' '}
                 <a
                   target='_blank'
+                  rel='noopener noreferrer'
                   className='remote-link'
                   href='https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide'
                 >
@@ -201,6 +204,7 @@ class App extends React.Component {
                 Powered By{' '}
                 <a
                   target='_blank'
+                  rel='noopener noreferrer'
                   className='remote-link'
                   href='https://www.ethereum.org/'
                 >
@@ -211,6 +215,7 @@ class App extends React.Component {
                 Developed By{' '}
                 <a
                   target='_blank'
+                  rel='noopener noreferrer'
                   className='remote-link'
                   href='https://shams-nahid.herokuapp.com/'
                 >
@@ -303,11 +308,7 @@ class App extends React.Component {
   }
 
   render() {
-    const {
-      isMetaMaskPluginAvailable,
-      isTransactionIsRunning,
-      message
-    } = this.state;
+    const { isTransactionIsRunning, message } = this.state;
     return (
       <LoadingOverlay active={isTransactionIsRunning} spinner text={message}>
         {this.mainWindow()}
