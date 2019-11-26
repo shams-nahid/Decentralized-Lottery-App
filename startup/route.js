@@ -8,8 +8,6 @@ const userTraceMiddleware = require('../middleware/userTraceMiddleware');
 const contractInfoRouter = require('../router/contractInfoRouter');
 
 module.exports = app => {
-  app.use(express.static(path.join(__dirname, 'public')));
-
   app.use(express.json());
   app.use(bodyParser.json({ extended: false }));
   app.use(userTraceMiddleware);
