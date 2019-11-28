@@ -1,21 +1,17 @@
+![diagram](solidity_smart_contract.png)
+
 # Deploy your first smart contract in `Ethereum` network
 
 `Bitcoin` raised the blockchain technology, where `Ethereum` took it to the next level. Often said, `Blockchin 2.0`, `Ethereum` proved the possibility of blockchain technology beyond financial sector. This public blockchain network is famous for allowing the implementation of smart contracts. `Smart Contract` acts as a `locker` where it can be unlocked by certain conditions. `Solidity` programming language can be used to develop these `Smart Contract`.
 
-By the end of this blog,
+By the end of this article,
 
 - You will have a deployed smart contract in `Ethereum` network (Rinkeby Testnet)
 - You will interact with your smart contract using a react and node app.
 
-## Tech Stack
-
-- [Ethereum](https://www.ethereum.org/) - Platform
-- [Solidity](https://solidity.readthedocs.io/en/v0.4.17/) - Language
-- [React](https://reactjs.org/) - UI Library
-
 ## Prerequisite Technologies In Your Machine
 
-- [Node 10.15.3](https://nodejs.org/en/)
+- [Node 10.17.0](https://nodejs.org/en/)
 - [React](https://reactjs.org/)
 - [MetaMask](https://metamask.io/)
 
@@ -162,6 +158,10 @@ It is important to test your `smart-contract` before deployment.
 
 A deployed version of can be found [here](https://decentralized-lottery-app.herokuapp.com/).
 
+## Wrap Up
+
+For any query, please leave a response below. I will reply as soon possible. Also, you can contact [iXora team](https://ixorasolution.com/contact) for any assistance.
+
 ## References:
 
 - [Contract Source Code](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/)
@@ -173,8 +173,14 @@ A deployed version of can be found [here](https://decentralized-lottery-app.hero
 
 - [Smart Contract Link](https://rinkeby.etherscan.io/address/0x8c9815e2372bc6f9dec915751b31666ab08b2edb)
 
+- [Udemy](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/)
+
 - TxHash: `0x3349da25727612e32d292b2fd1f1d2ac5d07b35b9b0f62f356f60d3aa65c6241`
 
 - From account: `0x612a306d2707cf0B49A5d76594482f7AfCda506c`
 
 - Contract address: `0x8C9815E2372bC6F9Dec915751B31666aB08b2edb`
+
+## Meta text
+
+In this article we will simulate a `solidity smart contract` in `remix IDE`. Then we will cover `test`, `deployment` and `interaction` for the smart contract. For `interaction` we will use the `node` server and `react` library. Also make sure the we remove `read` dependency from `metamask` wallet.
